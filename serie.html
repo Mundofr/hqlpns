@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reproduciendo capítulo</title>
+  <link rel="stylesheet" href="serie.css" />
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'"> <img src="img/MaggisLive_logo.png" alt=""> </div>
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="#">Series</a>
+      <a href="#">Mi Lista</a>
+      <a href="#">Perfil</a>
+    </nav>
+    <div class="menu-toggle" id="menuToggle">
+      <span></span>
+      <span></span>
+      <span></span>
+  </header>
+
+<main>
+  <section class="video-player">
+    <h2 id="titulo-capitulo">Cargando capítulo...</h2>
+    <iframe id="videoFrame" width="100%" height="400" allowfullscreen title="Reproductor de video del capítulo"></iframe>
+    <p id="descripcion-capitulo"></p>
+
+    <div class="nav-buttons">
+      <button id="btn-prev">⟵ Anterior</button>
+      <button id="btn-next">Siguiente ⟶</button>
+    </div>
+
+  </section>
+
+  <section class="recomendados">
+    <h3>Otros capítulos:</h3>
+    <div id="recomendaciones" class="recomendaciones-lista"></div>
+  </section>
+</main>
+
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Mi Serie. Todos los derechos reservados.</p>
+    <nav class="footer-links">
+      <a href="#">Términos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
+</footer>
+
+  <script src="serie.js"></script>
+</body>
+</html>
